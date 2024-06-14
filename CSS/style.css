@@ -20,6 +20,7 @@
 
 
 .navbar {
+    z-index: 1;
     & img[alt='logo'] {
         width: 5rem;
     }
@@ -319,21 +320,29 @@ button[type="reset"] {
         font-size: 4rem;
     }
     .icon i {
-        font-size: 30px;
+        font-size: 20px;
     }
     .about-para {
         width: 100%;
         font-size: 1rem;
     }
 
-    .productContainer {
-        /* flex-direction: column; */
+    .ptag {
+        font-size: 10px;
+        width: 20px;
+        /* margin: 5px; */
+        padding: 0px 0px;
     }
 
     .product-wrapper {
         display: flex;
         flex-direction: column;
     }
-
-    
+    .iconss{
+        font-size: 10px;
+    }
+    h5 {
+        font-size: 15px;
+        width: fit-content;
+    }   
 }
