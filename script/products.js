@@ -33,7 +33,7 @@ let products = JSON.parse(localStorage.getItem("products")) ?
             category: "iPhones",
             description: "The iPhone 11 features a 6.1-inch Liquid Retina display, dual-camera system with Ultra Wide and Night mode, A13 Bionic chip, and improved battery life, offering high performance and advanced photography capabilities in a sleek design.",
             amount: 10999.0,
-            img_url: "",
+            img_url: "https://keirakistensamy.github.io/allimages/images/iPhone112.jpg",
         },
         {
             id: 5,
@@ -228,3 +228,17 @@ let spinnerWrapper = document.querySelector('.spinner-wrapper');
 setTimeout(() =>{
 spinnerWrapper.style.opacity = '0'; 
 }, 200);
+
+document.querySelector('[searchBar]').addEventListener('keyup', ()=>{
+    try {
+        if (searchBar.value.length < 1) {
+            displayProductsFiltered(products)
+        }
+        let filteredProduct = products.filter(product => product.productName.toLowerCase().includes(searchBar.value))
+        displayProductsFiltered(filteredProduct)
+        if (!filteredProduct.length) throw new Error(`${searchBar.value} was not found. Please try again`)
+    } catch (e) {
+        console.log(e);
+        store.textContent = e.message || 'Please try again'
+    }
+})

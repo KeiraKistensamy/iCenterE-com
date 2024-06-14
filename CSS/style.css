@@ -302,12 +302,13 @@ button[type="reset"] {
     }
 }
 
-@media (max-width: 300px) {
+@media screen and (max-width: 360px) {
     .display-2 {
         font-size: 1rem;
+
     }
     table th, table td {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
         padding: 0.25rem;
     }
     .purchaseButton {
@@ -315,13 +316,24 @@ button[type="reset"] {
         margin-top: 0.5rem;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .icon i {
-        font-size: 50px;
+        font-size: 30px;
     }
     .about-para {
         width: 100%;
         font-size: 1rem;
     }
+
+    .productContainer {
+        /* flex-direction: column; */
+    }
+
+    .product-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }

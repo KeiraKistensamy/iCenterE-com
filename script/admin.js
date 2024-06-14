@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${product.description}</td>
                 <td>${product.amount}</td>
                 <td>
-                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editModal${product.id}">Edit</button>
+
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#editModal${product.id}">Edit</button>
                     <div class="modal fade" id="editModal${product.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -48,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <input type="number" id="editPrice" value="${product.amount}" required>
                                     <label for="editImgUrl">Image URL:</label>
                                     <input type="text" id="editImgUrl" value="${product.img_url}" required>
-                                    <button type="button">Save</button>
                                 </form>
                             </div>
                             <div class="modal-footer">
@@ -65,17 +65,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    function editProduct(id) {
-        const product = products.find(p => p.id === id);
-        if (product) {
-            editId.value = product.id;
-            editName.value = product.productName;
-            editCategory.value = product.category;
-            editDescription.value = product.description;
-            editPrice.value = product.amount;
-            editImgUrl.value = product.img_url;
-            editForm.style.display = 'block';
-        }
+    function editProduct(product) {
+        this.editId = product.Id;
+        this.editName = product.productName;
+        this.editCategory = product.category;
+        this.editDescription = product.description;
+        this.editPrice = product.amount;
+        this.editImgUrl = product.img_url;
+        
     }
 
     function deleteProduct(id) {
