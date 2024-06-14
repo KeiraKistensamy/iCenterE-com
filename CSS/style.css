@@ -304,6 +304,14 @@ button[type="reset"] {
 }
 
 @media screen and (max-width: 360px) {
+    #btn-success{
+        width: 200px;
+        margin-left: -70px;
+    }
+    #input{
+        width: 200px;
+        margin-left: -37px;
+    }
     .display-2 {
         font-size: 1rem;
 
@@ -328,8 +336,8 @@ button[type="reset"] {
     }
 
     .ptag {
-        font-size: 10px;
-        width: 20px;
+        font-size: 20px;
+        width: 200px;
         /* margin: 5px; */
         padding: 0px 0px;
     }
@@ -341,8 +349,13 @@ button[type="reset"] {
     .iconss{
         font-size: 10px;
     }
-    h5 {
+    .text-center {
         font-size: 15px;
-        width: fit-content;
+        width: 200px;
+
     }   
+    #text-center{
+        width: 225px !important;
+        margin-left: 40px;
+    }
 }
