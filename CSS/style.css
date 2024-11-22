@@ -249,6 +249,8 @@ button[type="reset"] {
 /* spinner */
 /* --------------------------------------------------- */
 
+
+
 /* --------------------------------------------------- */
 /* Media Queries */
 /* --------------------------------------------------- */
@@ -353,7 +355,20 @@ button[type="reset"] {
         padding: 0.4rem 0.8rem; /* Smaller buttons */
     }
 }
+@media screen and (max-width: 370px) {
+    .card{
+        min-width: 100%;
+    }
 
+    [products]{
+        min-width: 100% !important;
+    }
+
+    [pro]{
+        min-width: 100% !important;
+
+    }
+}
 @media screen and (max-width: 360px) {
     #btn-success{
         width: 200px;

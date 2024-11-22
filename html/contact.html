@@ -9,104 +9,96 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom Styling -->
     <link rel="stylesheet" href="../CSS/style.css">
-    <!-- line awesome -->
-    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <!-- Line Awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Contact</title>
 </head>
 <body>
-        <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="https://keirakistensamy.github.io/allimages/images/iCenter(1).jpg" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="https://keirakistensamy.github.io/allimages/images/iCenter(1).jpg" alt="logo" class="img-fluid" style="max-width: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="./about.html">About</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="./products.html">Products</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="./checkout.html">Checkout</a></li>
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="./admin.html">Admin</a></li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./checkout.html">Checkout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./admin.html">Admin</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./contact.html">Contact</a></li>
                 </ul>
-              </div>
             </div>
-          </nav>
+        </div>
+    </nav>
 
-        <!--  -->
-        <main class="container-fluid">
-            <h2 class="display-2">Contact Us</h2>
+    <!-- Main Content -->
+    <main class="container-fluid">
+        <h2 class="display-2 text-center my-4">Contact Us</h2>
 
-            
-            <div class="row d-flex justify-content-centre">
+        <div class="row">
+            <h5 class="col-12 text-center mb-4">We would love to hear any feedback or inquiries you have. We'll get back to you as soon as we can!</h5>
+        </div>
 
-                <h5 id="text-center" class="w-100 text-center">We would love to hear any feedback or inquiries you have. We'll get back to you as soon as we can</h5>
-            </div>
-            <div class="d-flex flex-column justify-content-center m-3 p-5">
-                <form action="https://formspree.io/f/mbjnblwp" method="POST" class="formal">
-                    <div class="m-3 d-flex flex-column justify-content-center">
-                        <input id="input" type="text" name="Firstname" placeholder="Enter your first name" autocomplete="off" required>
-                    </div>
-                    <div class="m-3 d-flex flex-column justify-content-center">
-                        <input id="input" type="text" name="lastname" placeholder="Enter your last name" autocomplete="off" required>
-                    </div>
-                    <div class="m-3 d-flex flex-column justify-content-center">
-                        <input id="input" type="text" name="Email" placeholder="Email Address" autocomplete="off" required>
-                    </div>
-                    <div class="m-3 d-flex flex-column justify-content-center">
-                        <textarea id="input" rows="5" cols="60" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
-                    </div>
-                    <div class="m-5 d-flex flex-column justify-content-center">
-                        <button id="btn-success" class="btn btn-success" type="submit">Send Message</button>
-                    </div>
-                    <div class="m-5 d-flex flex-column justify-content-center">
-                        <button id="btn-success" class="btn btn-success " type="reset">Clear Form</button>
-                    </div>
+        <div class="d-flex flex-column justify-content-center mx-auto mb-5" style="max-width: 600px;">
+            <form action="https://formspree.io/f/mbjnblwp" method="POST">
+                <div class="mb-3">
+                    <input type="text" name="Firstname" class="form-control" placeholder="Enter your first name" autocomplete="off" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" name="lastname" class="form-control" placeholder="Enter your last name" autocomplete="off" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="Email" class="form-control" placeholder="Email Address" autocomplete="off" required>
+                </div>
+                <div class="mb-3">
+                    <textarea rows="5" class="form-control" name="message" placeholder="Enter your message" autocomplete="off" required></textarea>
+                </div>
+                <div class="mb-3 text-center">
+                    <button type="submit" class="btn btn-success">Send Message</button>
+                </div>
+                <div class="mb-3 text-center">
+                    <button type="reset" class="btn btn-danger">Clear Form</button>
+                </div>
+            </form>
 
-                </form>
-                <div class="iconss">
-                <div class="container d-flex justify-content-center align-items-center" style="height: 30vh;">
-                    <div class="">
-                        <h5 class="text-center">Or you can reach us via</h5>
-                        <div class="lead icon d-flex justify-content-center  align-items-center ">
-                            <i class="lab la-instagram"></i>
-                            <p class="ptag">@iCenter</p>
-                        </div>
-                        <div class="lead icon d-flex justify-content-center  align-items-center ">
-                            <i class="las la-envelope"></i>
-                            <p class="ptag">iCentre@gmail.com</p>
-                        </div>
-                        <div class="lead icon d-flex justify-content-center  align-items-center ">
-                            <i class="lab la-whatsapp"></i>
-                            <p class="ptag">071 387 6797</p>
-                        </div>
-                        <div class="lead icon d-flex justify-content-center  align-items-center ">
-                            <i class="las la-phone"></i>
-                            <p class="ptag">071 387 6797</p>
-                        </div>
-                    </div>
+            <!-- Contact Information -->
+            <div class="iconss text-center">
+                <h5>Or you can reach us via</h5>
+                <div class="lead icon d-flex justify-content-center align-items-center my-2">
+                    <i class="lab la-instagram"></i>
+                    <p class="ptag"> @iCenter</p>
+                </div>
+                <div class="lead icon d-flex justify-content-center align-items-center my-2">
+                    <i class="las la-envelope"></i>
+                    <p class="ptag">iCentre@gmail.com</p>
+                </div>
+                <div class="lead icon d-flex justify-content-center align-items-center my-2">
+                    <i class="lab la-whatsapp"></i>
+                    <p class="ptag">071 387 6797</p>
+                </div>
+                <div class="lead icon d-flex justify-content-center align-items-center my-2">
+                    <i class="las la-phone"></i>
+                    <p class="ptag">071 387 6797</p>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <!-- Footer -->
-        <footer class="container-fluid">
-            <div class="row mt-5">
-                <p class="lead">iCenter &copy; <span currentYear></span></p>
-            </div>
-        </footer>
-        
+    <!-- Footer -->
+    <footer class="container-fluid py-4 text-center">
+        <p class="lead">iCenter &copy; <span id="currentYear"></span></p>
+    </footer>
+
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <!-- Custom Script -->
     <script>
-// CurrentYear
-    document.querySelector('[currentYear]').textContent = new Date().getUTCFullYear()
-// Counter
-window.onload = () => {
-    document.querySelector('[counter]').textContent = JSON(localStorage)
-}
+        // Current Year
+        document.getElementById('currentYear').textContent = new Date().getUTCFullYear();
     </script>
 </body>
 </html>
