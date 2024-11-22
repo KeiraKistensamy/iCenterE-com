@@ -210,18 +210,47 @@ function addToCart(product) {
 // Initial render
 renderProducts(products);
 
-document.getElementById("searchButton").addEventListener("click", function() {
+// document.getElementById("searchButton").addEventListener("click", function() {
+//     const searchQuery = document.getElementById("searchInput").value.toLowerCase();
+//     const searchedProducts = products.filter(product => product.productName.toLowerCase().includes(searchQuery));
+//     createProductCards(searchedProducts);
+// });
+
+// document.querySelectorAll(".nav-link").forEach(navLink => {
+//     if (navLink.href === window.location.href) {
+//         navLink.classList.add("active");3
+    
+//     }
+// });
+
+document.getElementById("searchButton").addEventListener("click", () => {
     const searchQuery = document.getElementById("searchInput").value.toLowerCase();
     const searchedProducts = products.filter(product => product.productName.toLowerCase().includes(searchQuery));
-    createProductCards(searchedProducts);
-});
-
-document.querySelectorAll(".nav-link").forEach(navLink => {
-    if (navLink.href === window.location.href) {
-        navLink.classList.add("active");3
     
+    if (searchedProducts.length > 0) {
+        renderProducts(searchedProducts);
+    } else {
+        wrapper.innerHTML = `<p>No products found for "${searchQuery}". Please try again.</p>`;
     }
 });
+
+document.getElementById("searchInput").addEventListener("keyup", () => {
+    const searchQuery = document.getElementById("searchInput").value.toLowerCase();
+    
+    if (searchQuery.trim() === '') {
+        renderProducts(products);
+        return;
+    }
+
+    const searchedProducts = products.filter(product => product.productName.toLowerCase().includes(searchQuery));
+    
+    if (searchedProducts.length > 0) {
+        renderProducts(searchedProducts);
+    } else {
+        wrapper.innerHTML = `<p>No products found for "${searchQuery}". Please try again.</p>`;
+    }
+});
+
 
 let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
