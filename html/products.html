@@ -40,29 +40,46 @@
                 <h2 class="display-2">Products</h2>
             </div>
 
-          <div class="container productContainer">
-            <div class="dropdown">
-              <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Sort Items</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" value="categoryFilter">            
-                  <select id="categoryFilter" dropdown>
-                    <option value="all">All</option>
-                    <option value="iPhones">iPhone</option>
-                    <option value="Phone cases">Phone cases</option>
-                    <option value="Charger">Charger</option>
-                  </select></a></li>
-                <li><a class="dropdown-item" value="priceFilter">
-                  <select id="priceFilter">
-                    <option value="none">Sort by Price</option>
-                    <option value="low-to-high">Price: Low to High</option>
-                    <option value="high-to-low">Price: High to Low</option>
-                  </select></a></li>
-            </div>
+<div class="container mt-4">
+  <div class="row align-items-center">
+    <!-- Dropdowns -->
+    <div class="col-md-6 d-flex gap-3">
+      <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Sort Items
+        </button>
+        <ul class="dropdown-menu p-3">
+          <li class="mb-2">
+            <label for="categoryFilter" class="form-label fw-bold">Category</label>
+            <select id="categoryFilter" class="form-select">
+              <option value="all">All</option>
+              <option value="iPhones">iPhone</option>
+              <option value="Phone cases">Phone cases</option>
+              <option value="Charger">Charger</option>
+            </select>
+          </li>
+          <li>
+            <label for="priceFilter" class="form-label fw-bold">Price</label>
+            <select id="priceFilter" class="form-select">
+              <option value="none">Sort by Price</option>
+              <option value="low-to-high">Price: Low to High</option>
+              <option value="high-to-low">Price: High to Low</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-            <div class="input-group mb-3">
-              <input type="text" id="searchInput" class="form-control" placeholder="Search...">
-              <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
-            </div>
+    <!-- Search Bar -->
+    <div class="col-md-6">
+      <div class="input-group">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+        <button class="btn btn-success" type="button" id="searchButton">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <div class="spinner-wrapper">
               <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
@@ -76,9 +93,7 @@
                 
             </div>
             </div>
-        
-        <!-- <div class="row mb-5 g-2" products></div> -->
-        
+                
         </main>
 
         <!-- Footer -->

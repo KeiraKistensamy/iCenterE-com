@@ -6,7 +6,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://keirakistensamy.github.io/allimages/images/iCenter(1).jpg" type="image/x-icon">
     <!-- Bootstrap Styling -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Styling -->
     <link rel="stylesheet" href="../CSS/style.css">
     <!-- Line Awesome -->
@@ -17,8 +17,10 @@
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="https://keirakistensamy.github.io/allimages/images/iCenter(1).jpg" alt="logo" class="img-fluid" style="max-width: 50px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html">
+                <img src="https://keirakistensamy.github.io/allimages/images/iCenter(1).jpg" alt="logo" class="img-fluid" style="max-width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -35,70 +37,70 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="container-fluid">
-        <h2 class="display-2 text-center my-4">Contact Us</h2>
+    <main class="container">
+        <h2 class="display-4 text-center my-4">Contact Us</h2>
+        <p class="text-center mb-5">We'd love to hear from you! Feel free to reach out with any inquiries or feedback.</p>
 
-        <div class="row">
-            <h5 class="col-12 text-center mb-4">We would love to hear any feedback or inquiries you have. We'll get back to you as soon as we can!</h5>
-        </div>
-
-        <div class="d-flex flex-column justify-content-center mx-auto mb-5" style="max-width: 600px;">
-            <form action="https://formspree.io/f/mbjnblwp" method="POST">
-                <div class="mb-3">
-                    <input type="text" name="Firstname" class="form-control" placeholder="Enter your first name" autocomplete="off" required>
-                </div>
-                <div class="mb-3">
-                    <input type="text" name="lastname" class="form-control" placeholder="Enter your last name" autocomplete="off" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" name="Email" class="form-control" placeholder="Email Address" autocomplete="off" required>
-                </div>
-                <div class="mb-3">
-                    <textarea rows="5" class="form-control" name="message" placeholder="Enter your message" autocomplete="off" required></textarea>
-                </div>
-                <div class="mb-3 text-center">
-                    <button type="submit" class="btn btn-success">Send Message</button>
-                </div>
-                <div class="mb-3 text-center">
-                    <button type="reset" class="btn btn-danger">Clear Form</button>
-                </div>
-            </form>
+        <div class="row justify-content-center">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form action="https://formspree.io/f/mbjnblwp" method="POST">
+                    <div class="mb-3">
+                        <input type="text" name="firstname" class="form-control" placeholder="First Name" autocomplete="off" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="lastname" class="form-control" placeholder="Last Name" autocomplete="off" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" autocomplete="off" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea rows="5" class="form-control" name="message" placeholder="Your Message" autocomplete="off" required></textarea>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-success w-48">Send Message</button>
+                        <button type="reset" class="btn btn-danger w-48">Clear Form</button>
+                    </div>
+                </form>
+            </div>
 
             <!-- Contact Information -->
-            <div class="iconss text-center">
-                <h5>Or you can reach us via</h5>
-                <div class="lead icon d-flex justify-content-center align-items-center my-2">
-                    <i class="lab la-instagram"></i>
-                    <p class="ptag"> @iCenter</p>
+            <div class="col-md-5 d-flex flex-column align-items-start justify-content-center">
+                <h4 class="mb-3">Or reach us via:</h4>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="lab la-instagram la-2x text-danger"></i>
+                    <span class="ms-3">@iCenter</span>
                 </div>
-                <div class="lead icon d-flex justify-content-center align-items-center my-2">
-                    <i class="las la-envelope"></i>
-                    <p class="ptag">iCentre@gmail.com</p>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="las la-envelope la-2x text-primary"></i>
+                    <span class="ms-3">iCentre@gmail.com</span>
                 </div>
-                <div class="lead icon d-flex justify-content-center align-items-center my-2">
-                    <i class="lab la-whatsapp"></i>
-                    <p class="ptag">071 387 6797</p>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="lab la-whatsapp la-2x text-success"></i>
+                    <span class="ms-3">071 387 6797</span>
                 </div>
-                <div class="lead icon d-flex justify-content-center align-items-center my-2">
-                    <i class="las la-phone"></i>
-                    <p class="ptag">071 387 6797</p>
+                <div class="d-flex align-items-center">
+                    <i class="las la-phone la-2x text-dark"></i>
+                    <span class="ms-3">071 387 6797</span>
                 </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="container-fluid py-4 text-center">
-        <p class="lead">iCenter &copy; <span id="currentYear"></span></p>
+    <footer class="container-fluid">
+        <div class="row mt-5">
+            <p class="lead">iCenter &copy; <span currentYear></span></p>
+        </div>
     </footer>
 
     <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom Script -->
     <script>
-        // Current Year
-        document.getElementById('currentYear').textContent = new Date().getUTCFullYear();
+        // Update footer year automatically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
