@@ -122,7 +122,12 @@ h1 {
     /* color: red; */
     font-size: 15px;
     width: 80%;
+}
 
+.text-center {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* --------------------------------------------------- */
