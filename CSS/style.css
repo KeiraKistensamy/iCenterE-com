@@ -132,6 +132,7 @@ h1 {
 .about-para {
     width: 70%;
     font-size: 18px;
+    padding: 20px;
 }
 
 .about-bottom {
@@ -142,6 +143,7 @@ h1 {
     /* min-height: 85vh; */
     /* max-height: auto; */
     padding: 10px;
+    font-size: 15px;
     background-color: var(--awesome);
 }
 
@@ -167,7 +169,7 @@ transition: 0.25s ease-in-out;
 /* --------------------------------------------------- */
 
 .section-space {
-    min-height: 100vh;
+    min-height: 50vh;
     max-height: auto;
 }
 
